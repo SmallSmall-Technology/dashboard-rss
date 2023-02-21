@@ -1,0 +1,45 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.user-container {
+  position: relative;
+}
+
+
+.user-shorthand {
+  width: 29px;
+  height: 29px;
+  background-color: #222224;
+  color: #ffffff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 11px;
+  position: relative
+}
+
+.active-user {
+  position: absolute;
+  background-color: #138E3D;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid white;
+  left: 22px;
+  bottom: 1px;
+}
+
+.dashboard-active {
+  border-bottom: 3px solid black;
+}
+
+.card-custom {
+  min-height: 180px;
+  background: #222224;
+  border-radius: 10px;
+  color: #ffffff;
+}
