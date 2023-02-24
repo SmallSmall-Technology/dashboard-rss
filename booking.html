@@ -328,17 +328,15 @@
       <div class="col-12">
         <nav class="nav">
           <li class="nav-item mr-3 ">
-            <a class="nav-link primary-text-color  dashboard-active px-0" id="currentBookingBtn" data-toggle="collapse"
-              href="#currentBooking" role="button">Current Booking</a>
+            <a class="nav-link primary-text-color  dashboard-active px-0" id="currentBookingBtn" href="#"
+              role="button">Current Booking</a>
           </li>
           <li class="nav-item mr-3">
-            <a class="nav-link secondary-text-color px-0 " id="checklistBtn" data-toggle="collapse" href="#checklist"
-              role="button">Move-in
+            <a class="nav-link secondary-text-color px-0 " id="checklistBtn" href="#" role="button">Move-in
               Checklist</a>
           </li>
           <li class="nav-item mr-3">
-            <a class="nav-link secondary-text-color px-0" id="historyBtn" data-toggle="collapse" href="#history"
-              role="button">History</a>
+            <a class="nav-link secondary-text-color px-0" id="historyBtn" href="#" role="button">History</a>
           </li>
         </nav>
       </div>
@@ -493,6 +491,7 @@
   <script>
     $(document).ready(function () {
       $("#currentBookingBtn").click(function () {
+        $("#currentBooking").addClass("show");
         $("#checklist").removeClass("show");
         $("#history").removeClass("show");
         $("#checklistBtn").addClass("primary-text-color dashboard-active")
@@ -505,6 +504,7 @@
 
       });
       $("#checklistBtn").click(function () {
+        $("#checklist").addClass("show");
         $("#currentBooking").removeClass("show");
         $("#history").removeClass("show");
         $("#checklistBtn").addClass("primary-text-color dashboard-active")
@@ -516,6 +516,7 @@
 
       });
       $("#historyBtn").click(function () {
+        $("#history").addClass("show");
         $("#currentBooking").removeClass("show");
         $("#checklist").removeClass("show");
 
