@@ -2,12 +2,25 @@
   font-family: "Poppins", sans-serif;
 }
 
+.primary-text-color {
+  color: #222224;
+}
+
+.secondary-text-color {
+  color: #7D8993;
+}
+
 p {
   margin: 0;
 }
 
 .user-container {
   position: relative;
+}
+
+.nav-bottom-color {
+  border-bottom: 1px solid #EEEEEF;
+  ;
 }
 
 
