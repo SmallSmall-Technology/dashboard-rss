@@ -71,7 +71,7 @@
           </li>
           <li class="nav-item d-flex align-items-center mr-4">
             <div class="menu-text">
-              <a href="#" class=" text-dark" style="text-decoration: none;">Dashboard</a>
+              <a href="index.html" class=" text-dark" style="text-decoration: none;">Dashboard</a>
             </div>
           </li>
           <li class="nav-item d-flex align-items-center">
@@ -95,7 +95,7 @@
           </li>
           <li class="nav-item d-flex align-items-center mr-4 dashboard-active ">
             <div class="menu-text">
-              <a href="#" class=" text-dark" style="text-decoration: none;">Booking</a>
+              <a href="booking.html" class=" text-dark" style="text-decoration: none;">Booking</a>
             </div>
           </li>
           <li class="nav-item d-flex align-items-center">
@@ -306,6 +306,8 @@
           <span>Rentsmallsmall</span>
           <span class="mx-3">></span>
           <span>Dashboard</span>
+          <span class="mx-3">></span>
+          <span>Booking</span>
         </div>
         <div class="d-md-block d-none">
           <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button>
@@ -325,19 +327,24 @@
       </div>
       <div class="col-12">
         <nav class="nav">
-          <li class="nav-item">
-            <a class="nav-link primary-text-color  pl-0 active" href="#">Current Booking</a>
+          <li class="nav-item mr-3 ">
+            <a class="nav-link primary-text-color  dashboard-active px-0" id="currentBookingBtn" data-toggle="collapse"
+              href="#currentBooking" role="button">Current Booking</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link secondary-text-color " href="#">Move-in Checklist</a>
+          <li class="nav-item mr-3">
+            <a class="nav-link secondary-text-color px-0 " id="checklistBtn" data-toggle="collapse" href="#checklist"
+              role="button">Move-in
+              Checklist</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link secondary-text-color " href="#">History</a>
+          <li class="nav-item mr-3">
+            <a class="nav-link secondary-text-color px-0" id="historyBtn" data-toggle="collapse" href="#history"
+              role="button">History</a>
           </li>
         </nav>
       </div>
 
-      <div class="col-12 mt-5">
+      <!-- current booking -->
+      <div class="col-12 mt-5 collapse show" id="currentBooking">
         <div class="current-booking">
           <div class="row">
             <div class="col-12">
@@ -351,12 +358,12 @@
               <p style="font-size: 26px;">&#8358;153,000</p>
             </div>
             <div class="col-md-2 col-6 ">
-              <p style="font-size: 14px;" class="font-weight-light">Subscription fee</p>
-              <p style="font-size: 26px;">&#8358;153,000</p>
+              <p style="font-size: 14px;" class="font-weight-light">Service charge</p>
+              <p style="font-size: 26px;">&#8358;50,000</p>
             </div>
             <div class="col-md-2 col-6 ">
-              <p style="font-size: 14px;" class="font-weight-light">Subscription fee</p>
-              <p style="font-size: 26px;">&#8358;153,000</p>
+              <p style="font-size: 14px;" class="font-weight-light">Payment plan</p>
+              <p style="font-size: 26px;">Monthly</p>
             </div>
             <div class="col-md-6 col-12 ">
               <p style="font-size: 14px;" class="font-weight-light">Subscription date</p>
@@ -377,6 +384,74 @@
                 debit</button>
             </div>
           </div>
+        </div>
+
+      </div>
+
+      <!-- move in Checklist -->
+      <div class="col-12 mt-5 collapse" id="checklist">
+        <div class="current-booking">
+          <div class="row">
+            <div class="col-12">
+              <h3 style="font-size: 40px;">Checklist</h3>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- History Booking -->
+      <div class="col-12 mt-5 collapse" id="history">
+        <div class="current-booking">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Property</th>
+                <th scope="col">Location</th>
+                <th scope="col">Payment plan</th>
+                <th scope="col">Subscription fee</th>
+                <th scope="col">Subscription date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2 bed, castle condo</td>
+                <td>Ikoyi</td>
+                <td>Monthly</td>
+                <td>&#8358;53,000</td>
+                <td>
+                  <p class="d-flex align-items-center">15 May, 2021 <i style="font-size: 13px;"
+                      class="mx-2 fa-solid fa-arrow-right"></i>
+                    15 May, 2022</p>
+                </td>
+              </tr>
+              <tr>
+                <td>2 bed, castle condo</td>
+                <td>Ikoyi</td>
+                <td>Monthly</td>
+                <td>&#8358;53,000</td>
+                <td>
+                  <p class="d-flex align-items-center">15 May, 2021 <i style="font-size: 13px;"
+                      class="mx-2 fa-solid fa-arrow-right"></i>
+                    15 May, 2022</p>
+                </td>
+              </tr>
+              <tr>
+                <td>2 bed, castle condo</td>
+                <td>Ikoyi</td>
+                <td>Monthly</td>
+                <td>&#8358;53,000</td>
+                <td>
+                  <p class="d-flex align-items-center">15 May, 2021 <i style="font-size: 13px;"
+                      class="mx-2 fa-solid fa-arrow-right"></i>
+                    15 May, 2022</p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
 
       </div>
@@ -414,6 +489,46 @@
   <script src="./assets/js/bootstrap-js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#currentBookingBtn").click(function () {
+        $("#checklist").removeClass("show");
+        $("#history").removeClass("show");
+        $("#checklistBtn").addClass("primary-text-color dashboard-active")
+        $("#checklistBtn").addClass("secondary-text-color")
+        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").addClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").removeClass("secondary-text-color")
+
+      });
+      $("#checklistBtn").click(function () {
+        $("#currentBooking").removeClass("show");
+        $("#history").removeClass("show");
+        $("#checklistBtn").addClass("primary-text-color dashboard-active")
+        $("#checklistBtn").removeClass("secondary-text-color")
+        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").addClass("secondary-text-color")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color dashboard-active")
+
+      });
+      $("#historyBtn").click(function () {
+        $("#currentBooking").removeClass("show");
+        $("#checklist").removeClass("show");
+
+        $("#checklistBtn").addClass("secondary-text-color")
+        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").addClass("secondary-text-color")
+        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#historyBtn").removeClass("secondary-text-color")
+        $("#historyBtn").addClass("primary-text-color dashboard-active")
+      });
+
+    });
+  </script>
 
 
 </body>
