@@ -2,6 +2,18 @@
   font-family: "Poppins", sans-serif;
 }
 
+.primary-background {
+  background: #F6F7F8;
+  border-radius: 10px;
+  color: #222224;
+}
+
+.secondary-background {
+  background: #222224;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
 .primary-text-color {
   color: #222224;
 }
