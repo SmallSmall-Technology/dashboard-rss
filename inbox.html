@@ -29,10 +29,10 @@
   <!-- custom CSS -->
   <link rel="stylesheet" href="./assets/css/custom-css/header.css" />
   <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
-  <link rel="stylesheet" href="./assets/css/custom-css/index.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/inbox.css" />
 
 
-  <title>Dashboard Home</title>
+  <title>Inbox</title>
 </head>
 
 <body>
@@ -69,7 +69,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item d-flex align-items-center dashboard-active mr-4">
+          <li class="nav-item d-flex align-items-center  mr-4">
             <div class="menu-text">
               <a href="index.html" class=" text-dark" style="text-decoration: none;">Dashboard</a>
             </div>
@@ -81,7 +81,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item d-flex align-items-center mr-4">
+          <li class="nav-item d-flex align-items-center mr-4 dashboard-active">
             <div class="menu-text">
               <a href="inbox.html" class=" text-dark" style="text-decoration: none;">inbox</a>
             </div>
@@ -107,7 +107,7 @@
           </li>
           <li class="nav-item d-flex align-items-center mr-4">
             <div class="menu-text">
-              <a href="wallet.html" class=" text-dark" style="text-decoration: none;">Wallet</a>
+              <a href="#" class=" text-dark" style="text-decoration: none;">Wallet</a>
             </div>
           </li>
           <li class="nav-item d-flex align-items-center">
@@ -185,7 +185,7 @@
       </div>
 
       <div id="my-nav" class="collapse navbar-collapse mobile-menu-collapse pl-0 pt-4">
-        <div class="mb-5 pl-2 dashboard-active">
+        <div class="mb-5 pl-2 ">
           <p>
             <a href="#" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
@@ -194,7 +194,7 @@
           </p>
         </div>
 
-        <div class="mb-5 pl-2">
+        <div class="mb-5 pl-2 dashboard-active">
           <p>
             <a href="#" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="">
@@ -256,6 +256,8 @@
           <span>Rentsmallsmall</span>
           <span class="mx-3">></span>
           <span>Dashboard</span>
+          <span class="mx-3">></span>
+          <span>Inbox</span>
         </div>
         <div class="d-md-block d-none">
           <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button>
@@ -271,62 +273,197 @@
     </div>
     <div class="row">
       <div class="col-12 my-5">
-        <p style="font-size: 22px;">Dashboard</p>
+        <p style="font-size: 22px;">Inbox</p>
       </div>
-      <div class="col-md-4 col-12  mb-4">
-        <div class="card card-custom">
-          <div class="card-body">
-            <p class="card-text">Active Subscription</p>
-            <h3 class="card-title">1</h3>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-between mb-4">
+        <div>
+          <p>All</p>
+        </div>
+        <div class="new-message d-flex justify-content-end">
+          <button data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+            aria-controls="collapseExample" class="btn btn-send d-flex align-items-center"><img class="img-fluid"
+              src="assets/images/add-msg.svg" alt="">&nbsp;&nbsp;
+            New Message
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="inbox-left d-flex flex-column px-3 py-3">
+          <div class="inbox-left--msg d-flex  p-2  active-inbox">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+          <div class="inbox-left--msg d-flex  p-2  ">
+            <div class="inbox-msg-icon py-3  mr-2">
+              <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+            </div>
+            <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
+              <h5>Customer Experience</h5>
+              <h5>Rent Due for March</h5>
+              <p>Dear John, Your inspection is....</p>
+            </div>
+            <div class="inbox-date" style="font-size: 12px">
+              <p>23.02.23</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="inbox-right p-5 ">
+          <div class="inbox-expand py-4">
+            <p class="mb-4">23 Feb, 2023</p>
+            <h5 class="mb-4">Rent Due for March</h5>
+            <div class=" d-flex align-items-center ">
+              <div class="inbox-msg-icon py-3  mr-2">
+                <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+              </div>
+              <div class="inbox-msg-intro flex-grow-1  py-3 pl-2 text-dark">
+                <h5>Customer Experience</h5>
+              </div>
+            </div>
+            <div class="inbox-body">
+              <p class="mb-4">Dear John,</p>
+              <p class="mb-4">Your rent is due for March 2023 pls pay before the due date to avoid late rent payment
+                charges</p>
+              <p class="mb-4">Please feel free to reach out to us.</p>
+              <p class="mb-4">Regards,<br>
+                RSS Customer Experience</p>
+            </div>
+
+            <form method="" action="" class="collapse" id="collapseExample">
+              <div class="form-group">
+                <textarea class="form-control textarea-custom" placeholder="Write a message..."
+                  id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-send d-flex align-items-center">send <img class="img-fluid"
+                    src="assets/images/send-btn.svg" alt="">
+                </button>
+              </div>
+            </form>
+
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-12  mb-4">
-        <div class="card card-custom">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <p class="card-text">Upcoming Payment</p>
-              <h3 class="card-title">&#8358;230,000</h3>
-            </div>
-
-            <div class="text-right">
-              <a href="#" class="btn btn-light">pay now</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12  mb-4">
-        <div class="card card-custom">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <p class="card-text">Wallet Balance</p>
-              <h3 class="card-title">&#8358;50,000</h3>
-            </div>
-
-            <div class="text-right">
-              <a href="#" class="btn btn-light">pay now</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12 mb-4">
-        <div class="card card-custom">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <p class="card-text">Subscription Debt</p>
-              <h3 class="card-title">&#8358;0.00</h3>
-            </div>
-            <div>
-              <p class="card-text">SLate fee</p>
-              <h3 class="card-title">&#8358;3,000.00</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
   </main>
