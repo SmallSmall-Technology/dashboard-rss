@@ -4,7 +4,14 @@
   border-radius: 10px;
   overflow: scroll;
 
+}
 
+.inbox-left--msg:hover {
+  cursor: pointer;
+  background: #525253;
+  border-radius: 10px;
+  padding-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* 
