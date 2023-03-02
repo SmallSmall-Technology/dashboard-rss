@@ -152,7 +152,7 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <img class="img-fluid" src="./assets/images/menu-burger.svg" alt="">
       </button>
-      <a href="#" style="width: 33%">
+      <a href="#" style="width: 33%" class="flex-grow-1 text-center">
         <img class="img-fluid" src="assets/images/rss-logo.svg" alt="logo">
       </a>
       <div class="d-flex user-container">
@@ -160,34 +160,37 @@
           <p class="m-0">JD</p>
           <div class="active-user"></div>
         </div>
-        <div class="user-name">
-          <p>John Doe</p>
-        </div>
+
       </div>
       <div class="d-md-none d-block  nav-link text-dark dropdown-toggle dropdown-toggle--custom p-0"
         data-toggle="dropdown" href="#" role="button" aria-expanded="false">
         <img class="img-fluid" src="./assets/images/user-mobile.svg" alt="">
       </div>
 
-      </a>
+
       <div class="dropdown-menu menu_icon--dropdown p-0  logout-dropdown">
-        <!-- Menu Desktop view -->
-        <div class=" menu-desktop p-2">
+        <!-- Menu mobile view -->
+        <div class=" menu-desktop py-2 px-4 d-flex flex-column">
           <a href="#">
             <span class="navbar-text text-dark mr-5">
-              Log out
               <img class="img-fluid" src="assets/images/logout.svg" alt="">
+              Log out
             </span>
           </a>
+          <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
+            <small style="font-size: 10px; line-height: 14px;">Referral
+              code
+            </small><br>
+            Tna2301
+          </button>
         </div>
-
 
       </div>
 
       <div id="my-nav" class="collapse navbar-collapse mobile-menu-collapse pl-0 pt-4">
-        <div class="mb-5 pl-2 dashboard-active">
+        <div class="mb-5 pl-2 ">
           <p>
-            <a href="#" class=" text-dark" style="text-decoration: none;">
+            <a href="index.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
               &nbsp;&nbsp; Dashboard
             </a>
@@ -196,25 +199,24 @@
 
         <div class="mb-5 pl-2">
           <p>
-            <a href="#" class=" text-dark" style="text-decoration: none;">
+            <a href="inbox.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="">
               &nbsp;&nbsp; inbox
             </a>
           </p>
         </div>
 
-        <div class="mb-5 pl-2">
+        <div class="mb-5 pl-2 dashboard-active">
           <p>
-            <a href="#" class=" text-dark" style="text-decoration: none;">
+            <a href="booking.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/calendar-icon.svg" alt="">
               &nbsp;&nbsp; Booking
             </a>
-          </p>
         </div>
 
         <div class="mb-5 pl-2">
           <p>
-            <a href="#" class=" text-dark" style="text-decoration: none;">
+            <a href="wallet.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/wallet-icon.svg" alt="">
               &nbsp;&nbsp; Wallet
             </a>
@@ -238,8 +240,6 @@
             </a>
           </p>
         </div>
-
-
       </div>
     </nav>
 
