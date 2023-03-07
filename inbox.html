@@ -263,8 +263,8 @@
           <span>Inbox</span>
         </div>
         <div class="d-md-block d-none">
-          <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button>
-          <button type="button" class="btn btn-dark d-none">Verified</button>
+          <!-- <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button> -->
+          <!-- <button type="button" class="btn btn-dark d-none">Verified</button> -->
           <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
             <small style="font-size: 10px; line-height: 14px;">Referral
               code
@@ -282,11 +282,11 @@
 
     </div>
     <div class="row">
-      <div class="col-md-12 d-flex justify-content-between mb-4">
+      <div class="col-md-12 d-md-flex   d-none justify-content-between mb-4">
         <div>
           <p>All</p>
         </div>
-        <div class="new-message d-flex justify-content-end">
+        <div class="new-message d-flex justify-content-end ">
           <button data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
             aria-controls="collapseExample" class="btn btn-send d-flex align-items-center"><img class="img-fluid"
               src="assets/images/add-msg.svg" alt="">&nbsp;&nbsp;
@@ -296,8 +296,8 @@
       </div>
       <div class="col-md-4">
         <div class="inbox-left d-flex flex-column px-3 py-3">
-          <div class="inbox-left--msg d-flex  p-2  active-inbox">
-            <div class="inbox-msg-icon py-3  mr-2">
+          <div class="inbox-left--msg d-flex  p-2  active-inbox" data-toggle="modal" data-target="#exampleModal">
+            <div class=" inbox-msg-icon py-3 mr-2">
               <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
             </div>
             <div class="inbox-msg-intro flex-grow-1  py-3 pl-2">
@@ -430,7 +430,9 @@
 
         </div>
       </div>
-      <div class="col-md-8">
+
+      <!-- desktop view for inbox message -->
+      <div class="col-md-8 d-md-block d-none">
         <div class="inbox-right p-5 ">
           <div class="inbox-expand py-4">
             <p class="mb-4">23 Feb, 2023</p>
@@ -463,6 +465,66 @@
                 </button>
               </div>
             </form>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- mobile view for inbox message, which is a modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="inbox-right p-3 ">
+              <div class="new-message d-flex  justify-content-between mb-3">
+                <button data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                  aria-controls="collapseExample" class="btn btn-send d-flex align-items-center"><img class="img-fluid"
+                    src="assets/images/add-msg.svg" alt="">&nbsp;&nbsp;
+                  New Message
+                </button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                  style="position: relative; top: -20px;">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="inbox-expand py-4">
+                <p class="mb-4">23 Feb, 2023</p>
+                <h5 class="mb-4">Rent Due for March</h5>
+                <div class=" d-flex align-items-center ">
+                  <div class="inbox-msg-icon py-3  mr-2">
+                    <div class="msg-icon d-flex justify-content-center align-items-center">CX</div>
+                  </div>
+                  <div class="inbox-msg-intro flex-grow-1  py-3 pl-2 text-dark">
+                    <h5>Customer Experience</h5>
+                  </div>
+                </div>
+                <div class="inbox-body">
+                  <p class="mb-4">Dear John,</p>
+                  <p class="mb-4">Your rent is due for March 2023 pls pay before the due date to avoid late rent
+                    payment
+                    charges</p>
+                  <p class="mb-4">Please feel free to reach out to us.</p>
+                  <p class="mb-4">Regards,<br>
+                    RSS Customer Experience</p>
+                </div>
+
+                <form method="" action="" class="collapse" id="collapseExample">
+                  <div class="form-group">
+                    <textarea class="form-control textarea-custom" placeholder="Write a message..."
+                      id="exampleFormControlTextarea1" rows="4"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-send d-flex align-items-center">send <img class="img-fluid"
+                        src="assets/images/send-btn.svg" alt="">
+                    </button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
 
           </div>
         </div>
