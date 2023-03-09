@@ -246,9 +246,9 @@
   </header>
 
   <!-- Sub menu for booking section starts here -->
-  <div class="container-fluid d-flex justify-content-center nav-bottom-color">
+  <div class="container-fluid d-md-flex d-none nav-bottom-color sub-menu ">
     <div class="sub-nav d-flex flex-wrap">
-      <a class="text-decoration-none secondary-text-color mr-4 py-3  dashboard-active" href="booking.html">
+      <a class="text-decoration-none secondary-text-color mr-4 py-3  sub-menu--dashboard-active" href="booking.html">
         <div class="sub-menu-link  ">
           My Bookings
         </div>
@@ -281,6 +281,43 @@
     </div>
   </div>
 
+  <!-- Sub menu mobile view for booking section starts here -->
+  <div class="container-fluid d-block d-md-none nav-bottom-color sub-menu">
+    <div class="sub-nav d-flex justify-content-between ">
+      <a class="text-decoration-none secondary-text-color py-3  sub-menu--dashboard-active" href="booking.html">
+        <div class="sub-menu-link  ">
+          My Bookings
+        </div>
+      </a>
+      <a class="text-decoration-none secondary-text-color py-3" href="inspections.html">
+        <div class="sub-menu-link  ">
+          Inspections
+        </div>
+      </a>
+      <a class="text-decoration-none secondary-text-color py-3" href="request-repair.html">
+        <div class="sub-menu-link  ">
+          Request Repair
+        </div>
+      </a>
+      <div class="dropdown align-self-center">
+        <a class="text-decoration-none secondary-text-color" href="#" role="button" data-toggle="dropdown"
+          aria-expanded="false">
+          More
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+
+        <div class="dropdown-menu custom-dropdown-menu primary-background border-0 ">
+          <a class="dropdown-item secondary-text-color" href="property-rating.html">Property Rating</a>
+          <a class="dropdown-item secondary-text-color" href="subscription-agreement.html">Subscription Agreement</a>
+          <a class="dropdown-item secondary-text-color" href="transactions.html">Transactions</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
   <!-- Main body content starts here -->
   <main class="container">
     <div class="row mt-5">
@@ -308,11 +345,12 @@
       <div class="col-12 mt-5">
         <p style="font-size: 22px;">My Bookings</p>
       </div>
-      <div class="col-12">
+      <div class="col-12 sub-nav">
         <nav class="nav">
           <li class="nav-item mr-3 ">
-            <a class="nav-link primary-text-color  dashboard-active px-0" id="currentBookingBtn" href="#"
-              role="button">Current Booking</a>
+            <a class="nav-link primary-text-color  sub-menu--dashboard-active  px-0" id="currentBookingBtn" href="#"
+              role="button">Current
+              Booking</a>
           </li>
           <li class="nav-item mr-3">
             <a class="nav-link secondary-text-color px-0 " id="checklistBtn" href="#" role="button">Move-in
@@ -325,45 +363,47 @@
       </div>
 
       <!-- current booking -->
-      <div class="col-12 mt-5 collapse show" id="currentBooking">
-        <div class="current-booking">
+      <div class="col-12 mt-5 collapse show " id="currentBooking">
+        <div class="primary-background p-md-5 p-3">
           <div class="row">
             <div class="col-12">
-              <h3 style="font-size: 40px;">2 bed, Trinity Apartments</h3>
+              <h3 class="address-title">2 bed, Trinity Apartments</h3>
               <p>Agungi, Lekki, Lagos</p>
             </div>
           </div>
           <div class="row my-5">
             <div class="col-md-2 col-6 ">
-              <p style="font-size: 14px;" class="font-weight-light">Subscription fee</p>
-              <p style="font-size: 26px;">&#8358;153,000</p>
+              <p class="font-weight-light custom-font-size-14">Subscription fee</p>
+              <p class="custom-font-size-26">&#8358;153,000</p>
             </div>
             <div class="col-md-2 col-6 ">
-              <p style="font-size: 14px;" class="font-weight-light">Service charge</p>
-              <p style="font-size: 26px;">&#8358;50,000</p>
+              <p class="font-weight-light">Service charge</p>
+              <p class="custom-font-size-26">&#8358;50,000</p>
             </div>
             <div class="col-md-2 col-6 ">
-              <p style="font-size: 14px;" class="font-weight-light">Payment plan</p>
-              <p style="font-size: 26px;">Monthly</p>
+              <p class="font-weight-light custom-font-size-14">Payment plan</p>
+              <p class="custom-font-size-26">Monthly</p>
             </div>
             <div class="col-md-6 col-12 ">
-              <p style="font-size: 14px;" class="font-weight-light">Subscription date</p>
-              <p style="font-size: 26px;" class="d-flex align-items-center">15 May, 2021 <i style="font-size: 13px;"
-                  class="mx-2 fa-solid fa-arrow-right"></i>
+              <p class="font-weight-light custom-font-size-14">Subscription date</p>
+              <p class="d-flex align-items-center custom-font-size-26 subscription-date">15 May, 2021 <i
+                  style="font-size: 13px;" class="mx-2 fa-solid fa-arrow-right"></i>
                 15 May, 2022</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-12 custom-btn mb-2">
               <button class="btn font-weight-light subscription-btn p-3 btn-custom-primary" type="button">Renew
                 Subscription</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-12 custom-btn mb-2">
               <button class="btn font-weight-light subscription-btn p-3 btn-custom-primary" type="button">Cancel
                 Subscription</button>
             </div>
-            <div class="col-md-6">
-              <button class="btn font-weight-light wallet-btn p-3 text-dark" type="button">Subscribe to wallet direct
+            <div class="col-md-6 col-12 custom-btn mb-2">
+              <button class="btn font-weight-light subscription-btn p-3 btn-custom-primary" type="button">Subscribe to
+                wallet
+                direct
                 debit</button>
             </div>
           </div>
@@ -374,13 +414,21 @@
       <!-- move in Checklist -->
       <div class="col-12 mt-5 collapse" id="checklist">
         <div class="row">
-          <div class="col-md-4">
-            <div class="secondary-background p-4 mb-3">
-              <p>Penthouse 1 br A13 Olivia Court Lekki</p>
+          <div class="col-md-4 col-12 mb-4">
+            <div class="row">
+              <div class="col-md-12 col-6 mb-2">
+                <div class="secondary-background h-100 p-md-4 p-3 mb-3">
+                  <p>Penthouse 1 br A13 Olivia Court Lekki</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-6 mb-2">
+                <div class="secondary-background h-100 p-md-4 p-3 mb-3">
+                  <p>Premium furnished 2 br Maisonette B2 Olivia Court Lekki</p>
+                </div>
+              </div>
             </div>
-            <div class="secondary-background p-4 mb-3">
-              <p>Premium furnished 2 br Maisonette B2 Olivia Court Lekki</p>
-            </div>
+
+
           </div>
           <div class="col-md-8">
             <div class="primary-background  p-4">
@@ -388,20 +436,55 @@
                 <div class="col-md-12">
                   <p>Premium furnished 2 br Maisonette B2 Olivia Court Lekki</p>
                 </div>
+
+
+                <!-- videos -->
                 <div class="col-md-12 my-3">
                   <p class="d-inline-block border-bottom border-dark">Video</p>
                 </div>
                 <div class="col-md-12">
-                  <div class="checkin-videos"></div>
+                  <div class="checkin-videos d-flex flex-wrap">
+                    <div class="checkin-videos-item  mr-3 mb-3">
+                      <video width="100%" height="" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
                 </div>
+                <!-- end of videos -->
+
+
+                <!-- pictures -->
                 <div class="col-md-12 my-3">
                   <p class="d-inline-block border-bottom border-dark">Pictures</p>
                 </div>
                 <div class="col-md-12">
-                  <div class="checkin-pictures d-flex">
-
+                  <div class="checkin-pictures d-flex flex-wrap">
+                    <div class="checkin-pictures-item  mr-3 mb-3">
+                      <img class="img-fluid" src="assets/images/pic-1.png" alt="">
+                    </div>
+                    <div class="checkin-pictures-item  mr-3 mb-3">
+                      <img class="img-fluid" src="assets/images/pic-2.png" alt="">
+                    </div>
+                    <div class="checkin-pictures-item  mr-3 mb-3">
+                      <img class="img-fluid" src="assets/images/pic-1.png" alt="">
+                    </div>
+                    <div class="checkin-pictures-item  mr-3 mb-3">
+                      <img class="img-fluid" src="assets/images/pic-2.png" alt="">
+                    </div>
+                    <div class="checkin-pictures-item  mr-3 mb-3">
+                      <img class="img-fluid" src="assets/images/pic-1.png" alt="">
+                    </div>
+                    <div class="checkin-pictures-item  mr-3 mb-3">
+                      <img class="img-fluid" src="assets/images/pic-2.png" alt="">
+                    </div>
                   </div>
                 </div>
+                <!-- end of pictures -->
+
+
                 <div class="col-md-12 my-3">
                   <p class="d-inline-block border-bottom border-dark">Checklist</p>
                 </div>
@@ -414,7 +497,7 @@
 
       <!-- History Booking -->
       <div class="col-12 mt-5 collapse" id="history">
-        <div class="current-booking">
+        <div class="primary-background table-responsive p-md-5">
           <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -507,10 +590,10 @@
         $("#checklist").removeClass("show");
         $("#history").removeClass("show");
         $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#historyBtn").addClass("secondary-text-color")
-        $("#historyBtn").removeClass("primary-text-color dashboard-active")
-        $("#currentBookingBtn").addClass("primary-text-color dashboard-active")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#currentBookingBtn").addClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").removeClass("secondary-text-color")
 
       });
@@ -518,12 +601,12 @@
         $("#checklist").addClass("show");
         $("#currentBooking").removeClass("show");
         $("#history").removeClass("show");
-        $("#checklistBtn").addClass("primary-text-color dashboard-active")
+        $("#checklistBtn").addClass("primary-text-color sub-menu--dashboard-active")
         $("#checklistBtn").removeClass("secondary-text-color")
-        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").addClass("secondary-text-color")
         $("#historyBtn").addClass("secondary-text-color")
-        $("#historyBtn").removeClass("primary-text-color dashboard-active")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
 
       });
       $("#historyBtn").click(function () {
@@ -532,11 +615,11 @@
         $("#checklist").removeClass("show");
 
         $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").addClass("secondary-text-color")
-        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#historyBtn").removeClass("secondary-text-color")
-        $("#historyBtn").addClass("primary-text-color dashboard-active")
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
       });
 
     });
