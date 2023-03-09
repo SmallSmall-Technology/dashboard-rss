@@ -246,7 +246,7 @@
   </header>
 
   <!-- Sub menu for booking section starts here -->
-  <div class="container-fluid d-flex justify-content-center nav-bottom-color">
+  <div class="container-fluid d-md-flex d-none nav-bottom-color sub-menu ">
     <div class="sub-nav d-flex flex-wrap">
       <a class="text-decoration-none secondary-text-color mr-4 py-3  " href="booking.html">
         <div class="sub-menu-link  ">
@@ -258,7 +258,8 @@
           Inspections
         </div>
       </a>
-      <a class="text-decoration-none secondary-text-color mr-4 py-3 dashboard-active" href="request-repair.html">
+      <a class="text-decoration-none secondary-text-color mr-4 py-3 sub-menu--dashboard-active"
+        href="request-repair.html">
         <div class="sub-menu-link  ">
           Request Repair
         </div>
@@ -278,6 +279,41 @@
           Transactions
         </div>
       </a>
+    </div>
+  </div>
+
+  <!-- Sub menu mobile view for booking section starts here -->
+  <div class="container-fluid d-block d-md-none nav-bottom-color sub-menu">
+    <div class="sub-nav d-flex justify-content-between ">
+      <a class="text-decoration-none secondary-text-color py-3  " href="booking.html">
+        <div class="sub-menu-link  ">
+          My Bookings
+        </div>
+      </a>
+      <a class="text-decoration-none secondary-text-color py-3" href="inspections.html">
+        <div class="sub-menu-link  ">
+          Inspections
+        </div>
+      </a>
+      <a class="text-decoration-none secondary-text-color py-3 sub-menu--dashboard-active" href="request-repair.html">
+        <div class="sub-menu-link  ">
+          Request Repair
+        </div>
+      </a>
+      <div class="dropdown align-self-center">
+        <a class="text-decoration-none secondary-text-color" href="#" role="button" data-toggle="dropdown"
+          aria-expanded="false">
+          More
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+
+        <div class="dropdown-menu custom-dropdown-menu primary-background border-0 ">
+          <a class="dropdown-item secondary-text-color" href="property-rating.html">Property Rating</a>
+          <a class="dropdown-item secondary-text-color" href="subscription-agreement.html">Subscription Agreement</a>
+          <a class="dropdown-item secondary-text-color" href="transactions.html">Transactions</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -312,7 +348,7 @@
       <div class="col-12">
         <nav class="nav">
           <li class="nav-item mr-3 ">
-            <a class="nav-link primary-text-color  dashboard-active px-0" id="currentBookingBtn" href="#"
+            <a class="nav-link primary-text-color   sub-menu--dashboard-active px-0" id="currentBookingBtn" href="#"
               role="button">Request</a>
           </li>
 
@@ -443,10 +479,10 @@
         $("#checklist").removeClass("show");
         $("#history").removeClass("show");
         $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active ")
         $("#historyBtn").addClass("secondary-text-color")
-        $("#historyBtn").removeClass("primary-text-color dashboard-active")
-        $("#currentBookingBtn").addClass("primary-text-color dashboard-active")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active ")
+        $("#currentBookingBtn").addClass("primary-text-color sub-menu--dashboard-active ")
         $("#currentBookingBtn").removeClass("secondary-text-color")
 
       });
@@ -454,12 +490,12 @@
         $("#checklist").addClass("show");
         $("#currentBooking").removeClass("show");
         $("#history").removeClass("show");
-        $("#checklistBtn").addClass("primary-text-color dashboard-active")
+        $("#checklistBtn").addClass("primary-text-color sub-menu--dashboard-active ")
         $("#checklistBtn").removeClass("secondary-text-color")
-        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active ")
         $("#currentBookingBtn").addClass("secondary-text-color")
         $("#historyBtn").addClass("secondary-text-color")
-        $("#historyBtn").removeClass("primary-text-color dashboard-active")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active ")
 
       });
       $("#historyBtn").click(function () {
@@ -468,11 +504,11 @@
         $("#checklist").removeClass("show");
 
         $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active ")
         $("#currentBookingBtn").addClass("secondary-text-color")
-        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active ")
         $("#historyBtn").removeClass("secondary-text-color")
-        $("#historyBtn").addClass("primary-text-color dashboard-active")
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active ")
       });
 
     });
