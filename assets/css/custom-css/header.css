@@ -2,6 +2,26 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+/* START CUSTOM FONT SIZES */
+.custom-font-size-14 {
+  font-size: 14px;
+}
+
+.custom-font-size-13 {
+  font-size: 13px;
+}
+
+.custom-font-size-22 {
+  font-size: 22px;
+}
+
+.custom-font-size-26 {
+  font-size: 26px;
+}
+
+/* END CUSTOM FONT SIZES */
+
 .primary-background {
   background: #F6F7F8;
   border-radius: 10px;
@@ -22,11 +42,44 @@
   color: #7D8993;
 }
 
-.btn-custom-primary:hover {
-  background: #39393b;
+.divider {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #CCCCD3;
+}
+
+.divider-vertical {
+  width: 0.1px;
+  height: -1px;
+  background-color: #CCCCD3;
+}
+
+
+
+.btn-custom-primary {
+  background: #222224;
   border-radius: 4px;
   color: #CCCCD3;
   border: 1px solid #222224;
+  min-width: 211px
+}
+
+.btn-custom-primary:hover {
+  background: #39393b;
+  color: #CCCCD3;
+}
+
+
+.btn-custom-secondary {
+  background: #222224;
+  border-radius: 4px;
+  color: #CCCCD3;
+  border: 1px solid #222224;
+}
+
+.btn-custom-secondary:hover {
+  background: #39393b;
+  color: #CCCCD3;
 }
 
 p {
@@ -65,12 +118,13 @@ p {
   bottom: 1px;
 }
 
-.dashboard-active {
+.dashboard-active, .sub-menu--dashboard-active {
   border-bottom: 3px solid black;
+  color: #222224
 }
 
 .card-custom {
-  min-height: 180px;
+  min-height: 100%;
   background: #222224;
   border-radius: 10px;
   color: #ffffff;
@@ -98,10 +152,40 @@ p {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
 }
 
+.sub-menu {
+  padding-left: 17em;
+}
+
+.address-title {
+  font-size: 40px;
+}
+
+.special-input {
+  border: none;
+  border-radius: unset;
+  border-bottom: 1px solid #c5c7c9;
+  padding-left: 0px;
+}
+
+.special-input::placeholder {
+  color: #CCCCD3;
+}
+
 .user-name {
   font-size: 13px;
   align-self: center;
 }
+
+.dropdown-menu.show {
+  left: -220% !important;
+}
+
+.custom-dropdown-menu {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+}
+
+
 
 /*****MEDIA QUERY****/
 
@@ -120,6 +204,27 @@ p {
   .dropdown-toggle::after {
     display: none;
   }
+
+  .sub-menu {
+    padding-left: 1em;
+    font-size: 11px;
+  }
+
+  .address-title {
+    font-size: 25px;
+  }
+
+  .btn-custom-primary {
+    min-width: 0
+  }
+
+  .sub-nav {
+    font-size: 13px;
+  }
+
+  /* .custom-dropdown-menu {
+    left: -168px !important;
+  } */
 }
 
 /* Small devices (landscape phones, 576px and up) */
