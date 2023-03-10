@@ -185,6 +185,10 @@ p {
   border-radius: 7px;
 }
 
+.custom-dropdown-active{
+  color: #222224;
+}
+
 
 
 /*****MEDIA QUERY****/
