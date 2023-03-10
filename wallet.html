@@ -273,10 +273,10 @@
       <div class="col-12 mt-5">
         <p style="font-size: 22px;">Wallet</p>
       </div>
-      <div class="col-12">
+      <div class="col-12 sub-nav">
         <nav class="nav">
           <li class="nav-item mr-3 ">
-            <a class="nav-link primary-text-color  dashboard-active px-0" id="currentBookingBtn" href="#"
+            <a class="nav-link primary-text-color sub-menu--dashboard-active px-0" id="currentBookingBtn" href="#"
               role="button">Wallet Balance</a>
           </li>
 
@@ -477,10 +477,10 @@
         $("#checklist").removeClass("show");
         $("#history").removeClass("show");
         $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#historyBtn").addClass("secondary-text-color")
-        $("#historyBtn").removeClass("primary-text-color dashboard-active")
-        $("#currentBookingBtn").addClass("primary-text-color dashboard-active")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#currentBookingBtn").addClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").removeClass("secondary-text-color")
 
       });
@@ -488,12 +488,12 @@
         $("#checklist").addClass("show");
         $("#currentBooking").removeClass("show");
         $("#history").removeClass("show");
-        $("#checklistBtn").addClass("primary-text-color dashboard-active")
+        $("#checklistBtn").addClass("primary-text-color sub-menu--dashboard-active")
         $("#checklistBtn").removeClass("secondary-text-color")
-        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").addClass("secondary-text-color")
         $("#historyBtn").addClass("secondary-text-color")
-        $("#historyBtn").removeClass("primary-text-color dashboard-active")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
 
       });
       $("#historyBtn").click(function () {
@@ -502,11 +502,11 @@
         $("#checklist").removeClass("show");
 
         $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color dashboard-active")
+        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").addClass("secondary-text-color")
-        $("#currentBookingBtn").removeClass("primary-text-color dashboard-active")
+        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#historyBtn").removeClass("secondary-text-color")
-        $("#historyBtn").addClass("primary-text-color dashboard-active")
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
       });
 
     });
