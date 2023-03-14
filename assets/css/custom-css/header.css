@@ -23,15 +23,26 @@
 /* END CUSTOM FONT SIZES */
 
 .primary-background {
-  background: #F6F7F8;
+  background: #F3F6F8;
   border-radius: 10px;
   color: #222224;
 }
 
 .secondary-background {
-  background: #222224;
+  background: #007DC1;
   border-radius: 10px;
   color: #ffffff;
+}
+
+.tertiary-background {
+  background: #64318A;
+  color: #ffffff;
+}
+
+.default-background {
+  background: #ffffff;
+  border-radius: 10px;
+  color: #222224;
 }
 
 .primary-text-color {
@@ -57,16 +68,16 @@
 
 
 .btn-custom-primary {
-  background: #222224;
+  background: #007DC1;
   border-radius: 4px;
-  color: #CCCCD3;
-  border: 1px solid #222224;
+  color: #fafafa;
+  border: 1px solid #007DC1;
   min-width: 211px
 }
 
 .btn-custom-primary:hover {
-  background: #39393b;
-  color: #CCCCD3;
+  background: #007DC1;
+  color: #eeeef3;
 }
 
 
@@ -99,7 +110,7 @@ p {
 .user-shorthand {
   width: 29px;
   height: 29px;
-  background-color: #222224;
+  background-color: #007DC1;
   color: #ffffff;
   border-radius: 100%;
   text-align: center;
@@ -119,15 +130,16 @@ p {
 }
 
 .dashboard-active, .sub-menu--dashboard-active {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #007DC1;
   color: #222224
 }
 
 .card-custom {
   min-height: 100%;
-  background: #222224;
+  background: #F3F6F8;
   border-radius: 10px;
-  color: #ffffff;
+  color: #222224;
+  border: 0px;
 }
 
 .menu-navbar-bg {
@@ -185,7 +197,7 @@ p {
   border-radius: 7px;
 }
 
-.custom-dropdown-active{
+.custom-dropdown-active {
   color: #222224;
 }
 
