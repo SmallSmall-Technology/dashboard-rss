@@ -29,10 +29,10 @@
   <!-- custom CSS -->
   <link rel="stylesheet" href="./assets/css/custom-css/header.css" />
   <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
-  <link rel="stylesheet" href="./assets/css/custom-css/inbox.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/index.css" />
 
 
-  <title>Inbox</title>
+  <title>Dashboard Home</title>
 </head>
 
 <body>
@@ -69,7 +69,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item d-flex align-items-center  mr-4">
+          <li class="nav-item d-flex align-items-center dashboard-active mr-4">
             <div class="menu-text">
               <a href="index.html" class=" text-dark" style="text-decoration: none;">Dashboard</a>
             </div>
@@ -82,7 +82,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item d-flex align-items-center dashboard-active mr-4">
+          <li class="nav-item d-flex align-items-center mr-4">
             <div class="menu-text">
               <a href="inbox.html" class=" text-dark" style="text-decoration: none;">Notification</a>
             </div>
@@ -189,7 +189,7 @@
       </div>
 
       <div id="my-nav" class="collapse navbar-collapse mobile-menu-collapse pl-0 pt-4">
-        <div class="mb-4 pl-2 ">
+        <div class="mb-4 pl-2 dashboard-active">
           <p>
             <a href="index.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
@@ -198,7 +198,7 @@
           </p>
         </div>
 
-        <div class="mb-4 pl-2 dashboard-active">
+        <div class="mb-4 pl-2">
           <p>
             <a href="inbox.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="">
@@ -255,181 +255,10 @@
 
   </header>
 
-  <div class="container-fluid">
-    <div>
 
-    </div>
-  </div>
 
   <main class="container">
-    <div class="row mt-5">
-      <div class="col-12 d-flex justify-content-between">
-        <div style="color: #7D8993; font-size: 13px;" class="font-weight-lighter">
-          <span>Rentsmallsmall</span>
-          <span>></span>
-          <span>Dashboard</span>
-          <span>></span>
-          <span>Notification</span>
-        </div>
-        <div class="d-md-block d-none">
-          <!-- <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button> -->
-          <!-- <button type="button" class="btn btn-dark d-none">Verified</button> -->
-          <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
-            <small style="font-size: 10px; line-height: 14px;">Referral
-              code
-            </small><br>
-            Tna2301
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 my-5">
-        <p style="font-size: 22px;">Notification</p>
-      </div>
 
-
-    </div>
-    <div class="row mb-5">
-      <div class="col-md-12 d-md-flex   d-none justify-content-between mb-4">
-        <p><span style="border-bottom: 2px solid black">All</span> notification</p>
-      </div>
-      <div class="col-12">
-        <p>Latest Notification <span class="secondary-text-color">(2)</span></p>
-      </div>
-    </div>
-
-    <!-- latest message -->
-    <div class="row mb-4">
-      <div class="col-12 mb-3">
-        <p class="secondary-text-color">March 15,2023</p>
-      </div>
-      <div class="col-12 mb-3" data-toggle="modal" data-target="#exampleModal">
-        <div class="message-container--latest px-3 py-4 justify-content-between d-flex">
-          <div class="d-flex align-items-center">
-            <div class="bss-btn px-3 py-2  mr-md-5 d-none d-md-block">
-              Rentsmallsmall
-            </div>
-            <div class="bss-btn p-2  mr-2 d-md-none d-block">
-              RSS
-            </div>
-            <div class="msg-intro">
-              <p>Property shares notification</p>
-              <p style="font-size: 13px;">Dear John, Your shares are....</p>
-            </div>
-          </div>
-          <div class="align-self-center mr-md-4 mr-1">
-            <i class="fa-solid fa-greater-than"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog " role="document">
-          <div class="modal-content primary-background">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="py-4">
-                <p class="mb-4">23 Feb, 2023</p>
-                <h5 class="mb-4">Property shares notification</h5>
-                <div class=" d-flex align-items-center ">
-                  <div class="inbox-msg-icon py-3  mr-2">
-                    <div class="msg-icon d-flex justify-content-center align-items-center">BSS</div>
-                  </div>
-                  <div class="flex-grow-1  py-3 pl-2 text-dark">
-                    <p style="font-size: 14px; font-weight: 400;">Rentsmallsmall</p>
-                  </div>
-                </div>
-                <div class="inbox-body">
-                  <p class="mb-4">Dear John,</p>
-                  <p class="mb-4">Your rent is due for March 2023 pls pay before the due date to avoid late rent
-                    payment
-                    charges</p>
-                  <p class="mb-4">Please feel free to reach out to us.</p>
-                  <p class="mb-4">Regards,<br>
-                    RSS Customer Experience</p>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 mb-3">
-        <div class="message-container--latest px-3 py-4 justify-content-between d-flex">
-          <div class="d-flex align-items-center">
-            <div class="bss-btn px-3 py-2  mr-md-5 d-none d-md-block">
-              Rentsmallsmall
-            </div>
-            <div class="bss-btn p-2  mr-2 d-md-none d-block">
-              BSS
-            </div>
-            <div class="msg-intro">
-              <p>Property shares notification</p>
-              <p style="font-size: 13px;">Dear John, Your shares are....</p>
-            </div>
-          </div>
-          <div class="align-self-center mr-md-4 mr-1">
-            <i class="fa-solid fa-greater-than"></i>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Older messages -->
-    <div class="row mb-4">
-      <div class="col-12 mb-3">
-        <p class="secondary-text-color">March 10,2023</p>
-      </div>
-      <div class="col-12 mb-3">
-        <div class="message-container px-3 py-4 justify-content-between d-flex">
-          <div class="d-flex align-items-center">
-            <div class="bss-btn px-3 py-2  mr-md-5 d-none d-md-block">
-              Rentsmallsmall
-            </div>
-            <div class="bss-btn p-2  mr-2 d-md-none d-block">
-              RSS
-            </div>
-            <div class="msg-intro">
-              <p>Property shares notification</p>
-              <p style="font-size: 13px;">Dear John, Your shares are....</p>
-            </div>
-          </div>
-          <div class="align-self-center mr-md-4 mr-1">
-            <i class="fa-solid fa-greater-than"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 mb-3">
-        <div class="message-container px-3 py-4 justify-content-between d-flex">
-          <div class="d-flex align-items-center">
-            <div class="bss-btn px-3 py-2  mr-md-5 d-none d-md-block">
-              Rentsmallsmall
-            </div>
-            <div class="bss-btn p-2  mr-2 d-md-none d-block">
-              BSS
-            </div>
-            <div class="msg-intro">
-              <p>Property shares notification</p>
-              <p style="font-size: 13px;">Dear John, Your shares are....</p>
-            </div>
-          </div>
-          <div class="align-self-center mr-md-4 mr-1">
-            <i class="fa-solid fa-greater-than"></i>
-          </div>
-        </div>
-      </div>
-
-    </div>
 
   </main>
 
@@ -438,7 +267,7 @@
       <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
         <div>
           <a class="mr-3" href="#">Rentsmallsmall FAQ</a>
-          <a class="mr-3" href="#">Rentsmallsmall FAQ</a>
+          <a class="mr-3" href="#">Buysmallsmall FAQ</a>
           <a class="mr-3" href="#">About Us</a>
           <a class="" href="#">Blog</a>
         </div>

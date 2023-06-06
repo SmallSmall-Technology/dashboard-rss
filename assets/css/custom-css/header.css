@@ -201,6 +201,20 @@ p {
   color: #222224;
 }
 
+.notification-circle {
+  background: #027dc1;
+  width: 15px;
+  height: 15px;
+  color: #FFFFFF;
+  border-radius: 100%;
+  padding: 7px;
+  font-size: 9px;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+
+}
+
 
 
 /*****MEDIA QUERY****/
