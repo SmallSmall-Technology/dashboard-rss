@@ -189,7 +189,7 @@ p {
 }
 
 .dropdown-menu.show {
-  left: -220% !important;
+  left: -220%;
 }
 
 .custom-dropdown-menu {
@@ -235,6 +235,10 @@ p {
     display: none;
   }
 
+  .dropdown-menu.show {
+    left: unset;
+  }
+
   .sub-menu {
     padding-left: 1em;
     font-size: 11px;
@@ -250,6 +254,14 @@ p {
 
   .sub-nav {
     font-size: 13px;
+  }
+
+  .logout-dropdown {
+    left: unset;
+    right: 0;
+    border: 0;
+    background: #F6F7F8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
   }
 
   /* .custom-dropdown-menu {
