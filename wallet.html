@@ -290,7 +290,7 @@
       </div>
 
       <!-- default Wallet balance -->
-      <div class="col-12 mt-5 collapse show " id="currentBooking">
+      <div class="col-12 mt-5 collapse d-none " id="currentBooking">
         <div class="primary-background p-5 d-flex justify-content-center align-content-center">
           <div class="text-center">
             <img class="mb-4" style="width: 100px;" src="assets/images/wallet.gif" alt="">
@@ -348,7 +348,7 @@
       </div>
 
       <!-- Wallet balance -->
-      <div class="col-12 mt-5 collapse d-none" id="currentBooking">
+      <div class="col-12 mt-5 collapse show" id="currentBooking">
         <div class="current-booking">
           <div class="row">
             <div class="col-12">
@@ -357,35 +357,36 @@
             </div>
           </div>
           <div class="row my-5">
-            <div class="col-md-3 col-6 ">
+            <div class="col-md-3 col-12 mb-3">
               <p style="font-size: 14px;" class="font-weight-light">Account Name</p>
               <p style="font-size: 26px;">John Doe</p>
             </div>
-            <div class="col-md-3 col-6 ">
+            <div class="col-md-3 col-12 mb-3">
               <p style="font-size: 14px;" class="font-weight-light">Account number</p>
               <p style="font-size: 26px;">236 515 5674</p>
             </div>
-            <div class="col-md-3 col-6 ">
+            <div class="col-md-3 col-12 mb-3">
               <p style="font-size: 14px;" class="font-weight-light">Bank name</p>
               <p style="font-size: 26px;">Providus Bank</p>
             </div>
-            <div class="col-md-2 col-12 ">
+            <div class="col-md-2 col-12 mb-3">
               <p style="font-size: 14px;" class="font-weight-light">Created</p>
               <p style="font-size: 26px;" class="d-flex align-items-center">10/23</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
-              <button class="btn font-weight-light subscription-btn p-3 btn-custom-primary" type="button"
+            <div class="col-md-3 col-6 mb-2">
+              <button class="btn font-weight-light subscription-btn  p-md-3 p-1 secondary-background" type="button"
                 data-target="#fundWallet" data-toggle="modal">Fund
                 Wallet</button>
             </div>
-            <div class="col-md-3">
-              <button class="btn font-weight-light subscription-btn p-3 btn-custom-primary" type="button">Pay
+            <div class="col-md-3 col-6 mb-2">
+              <button class="btn font-weight-light subscription-btn  p-md-3 p-1 secondary-background" type="button">Pay
                 Subscription</button>
             </div>
-            <div class="col-md-6">
-              <button class="btn font-weight-light wallet-btn p-3 text-dark" type="button">Subscribe to wallet direct
+            <div class="col-md-6 col-12">
+              <button class="btn font-weight-light wallet-btn p-3 text-dark" type="button">Subscribe to wallet
+                direct
                 debit</button>
             </div>
           </div>
@@ -402,42 +403,88 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body px-5 py-2">
-                <div class="primary-background p-3">
-                  <h5>Wallet Balance</h5>
-                  <p>&#8358;500,000</p>
+              <div class="modal-body px-md-5 px-2 py-2">
+                <div class="secondary-background p-4 my-3 wallet-balance-container">
+                  <h5 style="font-size: 13px;">Wallet Balance</h5>
+                  <p style="font-size: 30px; font-weight: 600;">&#8358;500,000</p>
                 </div>
-                <div class="mb-4">
-                  <p class="font-weight-light">Transfer</p>
-                  <p>Providus Bank</p>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <p>9985155675</p>
-                    </div>
-                    <div style="cursor:pointer"
-                      class="col-md-2 d-flex flex-column justify-content-center align-items-center">
-                      <img class="img-fluid w-50" src="assets/images/copy.svg" alt="">
-                      <span class="text-center" style="font-size: 8px; display: inline-block;">copy</span>
+                <div class="divider my-5" style="border-width: 0.5px;"></div>
+                <div class="d-flex">
+                  <div class="mr-2">
+                    <img src="assets/images/right-up.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="font-weight-light">Transfer</p>
+                    <div class="d-flex justify-content-between" style="font-weight: 500;">
+                      <p class="mr-3">Providus Bank</p>
+                      <div class="mr-3">
+                        <p id="accountNumber">9985155675</p>
+                      </div>
+                      <div style="cursor:pointer"
+                        class="col-md-2 d-flex flex-column justify-content-center align-items-center" id="copy">
+                        <img class="img-fluid" src="assets/images/copy.svg" alt="">
+                        <span class="text-center" id="copy-text"
+                          style="font-size: 8px; display: inline-block;">copy</span>
+                      </div>
                     </div>
                   </div>
-                  <p>or</p>
-                  <p class="font-weight-light">Debit card</p>
-                  <a href="http://">
-                    <img class="img-fluid" src="assets/images/paystack.svg" alt="">
-                  </a>
                 </div>
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Amount</label>
-                    <input type="text" class="form-control p-4" name="amount" id="exampleInputEmail1"
-                      aria-describedby="enterAmount" placeholder="enter amount">
-                  </div>
 
-                  <div class="my-4 text-center">
-                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
-                      data-target="#createWallet">Top up</button>
+                <div class="divider my-5" style="border-width: 0.5px;"></div>
+
+                <div class="d-flex">
+                  <div class="mr-2">
+                    <img src="assets/images/bank-card.svg" alt="">
                   </div>
-                </form>
+                  <div class="w-100">
+                    <p class="font-weight-light mb-2">Debit card</p>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" style="font-size: 12px;">Enter Amount</label>
+                        <div class="d-flex justify-content-between">
+                          <input type="text" class="form-control p-4 wallet-input mr-1" name="amount"
+                            id="exampleInputEmail1" aria-describedby="enterAmount" placeholder="enter amount">
+                          <button style="border-radius: 4px;" type="submit" class="btn secondary-background w-25"
+                            data-toggle="modal" data-target="#createWallet">Top
+                            up</button>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <a href="http://">
+                            <img class="img-fluid" src="assets/images/paystack.svg" alt="">
+                          </a>
+                        </div>
+                      </div>
+
+                    </form>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Successfully wallet modal -->
+        <div class="modal fade" id="fundWallet" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5 class="modal-title" id="staticBackdropLabel">Fund Wallet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5 py-2">
+                <div class="d-flex flex-column justify-content-center">
+                  <div>
+                    <img src="assets/images/" alt="">
+                  </div>
+                  <p>Wallet funded successfully</p>
+                </div>
+
               </div>
 
             </div>
@@ -564,6 +611,21 @@
         $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#historyBtn").removeClass("secondary-text-color")
         $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
+      });
+
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+
+      $("#copy").click(function () {
+        navigator.clipboard.writeText($("#accountNumber").text());
+        $("#copy-text").text("copied")
+        setTimeout(() => {
+          $("#copy-text").text("copy")
+        }, 1000);
+
       });
 
     });
