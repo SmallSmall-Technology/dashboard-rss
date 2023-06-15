@@ -1,20 +1,36 @@
 .message-container {
-  background: #F3F6F8;
+  /* background: #F3F6F8; */
   border-radius: 15px;
   cursor: pointer;
+}
+.message-container:hover {
+  /* background: #F3F6F8; */
+  border-radius: 15px;
+  cursor: pointer;
+  color: #007DC1;
+}
+
+.message-container-border{
+  border-bottom: 1px solid #DADADA;
+  padding: 0.5em 0;
 }
 
 .message-container--latest {
-  background: #80cff7;
-  border: 1px solid #0370aa;
+  background: #F3F6F8;
   border-radius: 15px;
   cursor: pointer;
+  color: #007DC1
 }
 
 .bss-btn {
-  background: #FFFFFF;
-  border-radius: 10px;
-  color: #027DC1
+  background: #007DC1;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
 
 }
 
@@ -22,5 +38,5 @@
   height: 40px;
   width: 40px;
   border-radius: 100%;
-  background: #FFFFFF;
+  background: #D9D9D9
 }
