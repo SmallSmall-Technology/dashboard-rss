@@ -28,7 +28,7 @@
 }
 
 .wallet-balance-container{
-  width: 80%;
+  width: 100%;
 }
 
 /*****MEDIA QUERY****/
@@ -50,10 +50,6 @@
   .wallet-btn{
     width: 100%;
   } 
-
-  .wallet-balance-container{
-    width: 100%;
-  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
