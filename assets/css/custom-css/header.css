@@ -2,7 +2,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 /* START CUSTOM FONT SIZES */
 .custom-font-size-14 {
   font-size: 14px;
@@ -23,19 +22,19 @@
 /* END CUSTOM FONT SIZES */
 
 .primary-background {
-  background: #F3F6F8;
+  background: #f3f6f8;
   border-radius: 10px;
   color: #222224;
 }
 
 .secondary-background {
-  background: #007DC1;
+  background: #007dc1;
   border-radius: 10px;
   color: #ffffff;
 }
 
 .tertiary-background {
-  background: #64318A;
+  background: #64318a;
   color: #ffffff;
 }
 
@@ -50,47 +49,44 @@
 }
 
 .secondary-text-color {
-  color: #7D8993;
+  color: #7d8993;
 }
 
 .divider {
   width: 100%;
   height: 0px;
-  border: 1px solid #CCCCD3;
+  border: 1px solid #ccccd3;
 }
 
 .divider-vertical {
   width: 0.1px;
   height: -1px;
-  background-color: #CCCCD3;
+  background-color: #ccccd3;
 }
 
-
-
 .btn-custom-primary {
-  background: #007DC1;
+  background: #007dc1;
   border-radius: 4px;
   color: #fafafa;
-  border: 1px solid #007DC1;
-  min-width: 211px
+  border: 1px solid #007dc1;
+  min-width: 211px;
 }
 
 .btn-custom-primary:hover {
-  background: #007DC1;
+  background: #007dc1;
   color: #eeeef3;
 }
-
 
 .btn-custom-secondary {
   background: #222224;
   border-radius: 4px;
-  color: #CCCCD3;
+  color: #ccccd3;
   border: 1px solid #222224;
 }
 
 .btn-custom-secondary:hover {
   background: #39393b;
-  color: #CCCCD3;
+  color: #ccccd3;
 }
 
 p {
@@ -102,25 +98,23 @@ p {
 }
 
 .nav-bottom-color {
-  border-bottom: 1px solid #EEEEEF;
-  ;
+  border-bottom: 1px solid #eeeeef;
 }
-
 
 .user-shorthand {
   width: 29px;
   height: 29px;
-  background-color: #007DC1;
+  background-color: #007dc1;
   color: #ffffff;
   border-radius: 100%;
   text-align: center;
   font-size: 11px;
-  position: relative
+  position: relative;
 }
 
 .active-user {
   position: absolute;
-  background-color: #138E3D;
+  background-color: #138e3d;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -129,23 +123,23 @@ p {
   bottom: 1px;
 }
 
-.dashboard-active, .sub-menu--dashboard-active {
-  border-bottom: 3px solid #007DC1;
-  color: #222224
+.dashboard-active,
+.sub-menu--dashboard-active {
+  border-bottom: 3px solid #007dc1;
+  color: #222224;
 }
 
 .card-custom {
   min-height: 100%;
-  background: #F3F6F8;
+  background: #f3f6f8;
   border-radius: 10px;
   color: #222224;
   border: 0px;
 }
 
 .menu-navbar-bg {
-  background-color: #F6F7F8;
+  background-color: #f6f7f8;
 }
-
 
 .nav-mobile {
   /* justify-content: space-between; */
@@ -153,14 +147,14 @@ p {
 
 .mobile-menu-collapse {
   z-index: 99999;
-  background-color: #F6F7F8;
+  background-color: #f6f7f8;
 }
 
 .logout-dropdown {
   left: unset;
   right: 0;
   border: 0;
-  background: #F6F7F8;
+  background: #f6f7f8;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
 }
 
@@ -180,7 +174,7 @@ p {
 }
 
 .special-input::placeholder {
-  color: #CCCCD3;
+  color: #ccccd3;
 }
 
 .user-name {
@@ -195,6 +189,7 @@ p {
 .custom-dropdown-menu {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
   border-radius: 7px;
+  min-width: 14em;
 }
 
 .custom-dropdown-active {
@@ -205,17 +200,14 @@ p {
   background: #027dc1;
   width: 15px;
   height: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 100%;
   padding: 7px;
   font-size: 9px;
   position: absolute;
   top: -8px;
   left: 12px;
-
 }
-
-
 
 /*****MEDIA QUERY****/
 
@@ -223,7 +215,7 @@ p {
 @media screen and (max-width: 480px) {
   .user-name {
     font-size: 12px;
-    align-self: center
+    align-self: center;
   }
 
   .dashboard-active {
@@ -237,6 +229,7 @@ p {
 
   .dropdown-menu.show {
     left: unset;
+    right: 0;
   }
 
   .sub-menu {
@@ -249,7 +242,7 @@ p {
   }
 
   .btn-custom-primary {
-    min-width: 0
+    min-width: 0;
   }
 
   .sub-nav {
@@ -260,7 +253,7 @@ p {
     left: unset;
     right: 0;
     border: 0;
-    background: #F6F7F8;
+    background: #f6f7f8;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
   }
 
@@ -270,7 +263,8 @@ p {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (max-width: 768px) {
@@ -280,7 +274,8 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 @media (max-width: 992px) {
   .navbar-collapse {
@@ -304,13 +299,15 @@ p {
     transition: left 300ms ease-in-out;
   }
 
-  .navbar-toggler.collapsed~.navbar-collapse {
+  .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: left 500ms ease-in-out;
   }
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media screen and (992px <=width <=1024px) {}
+@media screen and (992px <=width <=1024px) {
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+}
