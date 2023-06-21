@@ -29,6 +29,7 @@
   <!-- custom CSS -->
   <link rel="stylesheet" href="./assets/css/custom-css/header.css" />
   <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/success-icon.css">
   <link rel="stylesheet" href="./assets/css/custom-css/wallet.css" />
 
 
@@ -467,7 +468,7 @@
         </div>
 
         <!-- Successfully wallet modal -->
-        <div class="modal fade" id="fundWallet" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="fundWalletSuccess" data-backdrop="static" data-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -477,12 +478,15 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body px-5 py-2">
-                <div class="d-flex flex-column justify-content-center">
+              <div class="modal-body px-md-5 px-2 py-2">
+                <div class="d-flex flex-column justify-content-center align-items-center">
                   <div>
-                    <img src="assets/images/" alt="">
+                    <div class="success-icon my-5">
+                      <div class="success-icon__tip"></div>
+                      <div class="success-icon__long"></div>
+                    </div>
                   </div>
-                  <p>Wallet funded successfully</p>
+                  <p class="mb-5">Wallet funded successfully</p>
                 </div>
 
               </div>
