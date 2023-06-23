@@ -209,6 +209,48 @@ p {
   left: 12px;
 }
 
+#preloader {
+  /* background: #FFFFFF url(../../images/loader2.gif) center center no-repeat; */
+  background: #f3f6f8;
+  background-size: 15%;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 999999;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #027dc1;
+  border-bottom: 16px solid #027dc1;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 50vh auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*****MEDIA QUERY****/
 
 /* Small devices (landscape phones, 576px and up) */
