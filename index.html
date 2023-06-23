@@ -36,6 +36,11 @@
 </head>
 
 <body>
+  <!-- Preloader starts here -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+  <!-- Preloader ends here -->
 
   <header>
     <!-- desktop menu bar -->
@@ -246,7 +251,7 @@
           <a href="https://rent.smallsmall.com/user/dashboard" class="btn special-link-button mt-3">
             <div>
               <p class="text-left" style="font-size: 10px;">Go to</p>
-              <p class="text-right" style="font-size: 11px;">RentSmallsmall<br>dashboard</p>
+              <p class="text-right" style="font-size: 11px;">BuySmallsmall<br>dashboard</p>
             </div>
           </a>
         </div>
@@ -260,7 +265,7 @@
     <a href="https://buy.smallsmall.com/user/dashboard" class="btn special-link-button mt-3 d-md-inline-block d-none">
       <div>
         <p class="text-left" style="font-size: 10px;">Go to</p>
-        <p class="text-right" style="font-size: 11px;">RentSmallsmall<br>dashboard</p>
+        <p class="text-right" style="font-size: 11px;">BuySmallsmall<br>dashboard</p>
       </div>
     </a>
 
@@ -376,6 +381,15 @@
   <script src="./assets/js/bootstrap-js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
+
+  <script>
+    // $(document).ready(function () {
+    const preloader = $("#preloader");
+    window.addEventListener("load", function () {
+      preloader.css("display", "none");
+    });
+        // });
+  </script>
 
 
 </body>
