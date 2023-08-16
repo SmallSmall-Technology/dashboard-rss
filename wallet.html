@@ -283,6 +283,10 @@
             <a class="nav-link primary-text-color sub-menu--dashboard-active px-0" id="currentBookingBtn" href="#"
               role="button">Wallet Balance</a>
           </li>
+          <li class="nav-item mr-3 ">
+            <a class="nav-link primary-text-color px-0" id="rentWalletBtn" href="#" role="button">Save for Rent
+              Wallet</a>
+          </li>
 
           <li class="nav-item mr-3">
             <a class="nav-link secondary-text-color px-0" id="historyBtn" href="#" role="button">History</a>
@@ -290,63 +294,7 @@
         </nav>
       </div>
 
-      <!-- default Wallet balance -->
-      <div class="col-12 mt-5 collapse d-none " id="currentBooking1">
-        <div class="primary-background p-5 d-flex justify-content-center align-content-center">
-          <div class="text-center">
-            <img class="mb-4" style="width: 100px;" src="assets/images/wallet.gif" alt="">
-            <p class="mb-2" style="font-size: 22px;">You haven’t created a wallet yet</p>
-            <p class="mb-4" style="font-size: 13px;">You will need to provide your BVN to create a wallet on our
-              platform</p>
-            <button type="button" class="btn btn-dark py-3 btn-custom-primary px-5" data-toggle="modal"
-              data-target="#createWallet">Create Wallet</button>
-          </div>
-        </div>
 
-
-        <!-- Modal -->
-        <div class="modal fade" id="createWallet" data-backdrop="static" data-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header primary-background pl-5">
-                <h5 class="modal-title font-weight-light" id="staticBackdropLabel">Create Wallet</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body p-5">
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Provide bvn</label>
-                    <input type="text" class="form-control p-4" name="bvn" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" placeholder="BVN">
-
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Custom account name</label>
-                    <input type="text" class="form-control p-4" name="account-name" id="exampleInputPassword1"
-                      placeholder="Account name">
-                  </div>
-                  <div class="form-check text-center">
-                    <input type="checkbox" class="form-check-input " id="exampleCheck1">
-                    <label class="form-check-label " for="exampleCheck1">Agree to our <a href="#"
-                        style="color: #138E3D">terms
-                        and conditions</a> </label>
-                  </div>
-
-                  <div class="my-4 text-center">
-                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
-                      data-target="#createWallet">Create</button>
-                  </div>
-                </form>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
 
       <!-- Wallet balance -->
       <div class="col-12 mt-5 collapse show" id="currentBooking">
@@ -495,8 +443,271 @@
 
       </div>
 
+      <!-- default Wallet balance -->
+      <div class="col-12 mt-5 collapse  d-none  " id="currentBooking">
+        <div class="primary-background p-5 d-flex justify-content-center align-content-center">
+          <div class="text-center">
+            <img class="mb-4" style="width: 100px;" src="assets/images/wallet.gif" alt="">
+            <p class="mb-2" style="font-size: 22px;">You haven’t created a wallet yet</p>
+            <p class="mb-4" style="font-size: 13px;">You will need to provide your BVN to create a wallet on our
+              platform</p>
+            <button type="button" class="btn btn-dark py-3 btn-custom-primary px-5" data-toggle="modal"
+              data-target="#createWallet">Create Wallet</button>
+          </div>
+        </div>
 
 
+        <!-- Modal -->
+        <div class="modal fade" id="createWallet" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5 class="modal-title font-weight-light" id="staticBackdropLabel">Create Wallet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-5">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Provide bvn</label>
+                    <input type="text" class="form-control p-4" name="bvn" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" placeholder="BVN">
+
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Custom account name</label>
+                    <input type="text" class="form-control p-4" name="account-name" id="exampleInputPassword1"
+                      placeholder="Account name">
+                  </div>
+                  <div class="form-check text-center">
+                    <input type="checkbox" class="form-check-input " id="exampleCheck1">
+                    <label class="form-check-label " for="exampleCheck1">Agree to our <a href="#"
+                        style="color: #138E3D">terms
+                        and conditions</a> </label>
+                  </div>
+
+                  <div class="my-4 text-center">
+                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                      data-target="#createWallet">Create</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <!-- Save for rent wallet -->
+      <div class="col-12 mt-5 collapse " id="rentWallet">
+        <div class="rent-wallet">
+          <div class="row">
+            <div class="col-12">
+              <p>Balance</p>
+              <h3 style="font-size: 40px;">&#8358;500,000.00</h3>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-md-3 col-12 mb-3">
+              <p style="font-size: 14px;" class="font-weight-light">Account Name</p>
+              <p style="font-size: 26px;">John Doe</p>
+            </div>
+            <div class="col-md-3 col-12 mb-3">
+              <p style="font-size: 14px;" class="font-weight-light">Account number</p>
+              <p style="font-size: 26px;">236 515 5674</p>
+            </div>
+            <div class="col-md-3 col-12 mb-3">
+              <p style="font-size: 14px;" class="font-weight-light">Bank name</p>
+              <p style="font-size: 26px;">Providus Bank</p>
+            </div>
+            <div class="col-md-2 col-12 mb-3">
+              <p style="font-size: 14px;" class="font-weight-light">Created</p>
+              <p style="font-size: 26px;" class="d-flex align-items-center">10/23</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-6 mb-2">
+              <button class="btn font-weight-light  subscription-btn2 p-md-3 p-1 secondary-background" type="button"
+                data-target="#fundWallet" data-toggle="modal">Fund
+                Wallet</button>
+            </div>
+            <div class="col-md-3 col-6 mb-2">
+              <button class="btn font-weight-light subscription-btn2 p-md-3 p-1 secondary-background" type="button">Pay
+                Subscription</button>
+            </div>
+            <div class="col-md-6 col-12">
+              <button class="btn font-weight-light wallet-btn p-3 subscription-btn2" type="button">Subscribe to wallet
+                direct
+                debit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fund wallet Modal -->
+        <div class="modal fade" id="fundWallet" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5 class="modal-title" id="staticBackdropLabel">Fund Wallet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-md-5 px-2 py-2">
+                <div class="secondary-background p-4 my-3 wallet-balance-container">
+                  <h5 style="font-size: 13px;">Wallet Balance</h5>
+                  <p style="font-size: 30px; font-weight: 600;">&#8358;500,000</p>
+                </div>
+                <div class="divider my-2" style="border-width: 0.5px;"></div>
+                <div class="d-flex my-3">
+                  <div class="mr-2">
+                    <img src="assets/images/right-up.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="font-weight-light">Bank transfer</p>
+                    <div class="d-flex justify-content-between" style="font-weight: 500;">
+                      <p class="mr-3">Providus Bank</p>
+                      <div class="mr-3">
+                        <p id="accountNumber">9985155675</p>
+                      </div>
+                      <div style="cursor:pointer"
+                        class="col-md-2 d-flex flex-column justify-content-center align-items-center" id="copy">
+                        <img class="img-fluid" src="assets/images/copy.svg" alt="">
+                        <span class="text-center" id="copy-text"
+                          style="font-size: 8px; display: inline-block;">copy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider my-2" style="border-width: 0.5px;"></div>
+
+                <div class="d-flex my-4">
+                  <div class="mr-2">
+                    <img src="assets/images/bank-card.svg" alt="">
+                  </div>
+                  <div class="w-100">
+                    <p class="font-weight-light mb-2">Debit card</p>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" style="font-size: 12px;">Enter Amount</label>
+                        <div class="d-flex justify-content-between">
+                          <input type="text" class="form-control p-4 wallet-input mr-1" name="amount"
+                            id="exampleInputEmail1" aria-describedby="enterAmount" placeholder="Enter amount">
+                          <button style="border-radius: 4px;" type="submit" class="btn secondary-background w-25"
+                            data-toggle="modal" data-target="#createWallet">Top
+                            up</button>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <a href="http://">
+                            <img class="img-fluid" src="assets/images/paystack.svg" alt="">
+                          </a>
+                        </div>
+                      </div>
+
+                    </form>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Successfully wallet modal -->
+        <div class="modal fade" id="fundWalletSuccess" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5 class="modal-title" id="staticBackdropLabel">Fund Wallet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-md-5 px-2 py-2">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div>
+                    <div class="success-icon my-5">
+                      <div class="success-icon__tip"></div>
+                      <div class="success-icon__long"></div>
+                    </div>
+                  </div>
+                  <p class="mb-5">Wallet funded successfully</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- default Save for rent wallet-->
+      <div class="col-12 mt-5 collapse d-none" id="rentWallet">
+        <div class="secondary-background  p-5 d-flex justify-content-center align-content-center">
+          <div class="text-center">
+            <img class="mb-4" style="width: 100px;" src="assets/images/wallet.gif" alt="">
+            <p class="mb-2" style="font-size: 22px;">Create your Save for rent wallet</p>
+            <p class="mb-4" style="font-size: 13px;">This wallet allows you to save for your rent with a 5% discount
+              applied</p>
+            <button type="button" class="btn py-3 btn-custom-tertiary px-5" data-toggle="modal"
+              data-target="#createRentWallet">Create Wallet</button>
+          </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="createRentWallet" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5 class="modal-title font-weight-light" id="staticBackdropLabel">Create Wallet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-5">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Provide bvn</label>
+                    <input type="text" class="form-control p-4" name="bvn" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" placeholder="BVN">
+
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Custom account name</label>
+                    <input type="text" class="form-control p-4" name="account-name" id="exampleInputPassword1"
+                      placeholder="Account name">
+                  </div>
+                  <div class="form-check text-center">
+                    <input type="checkbox" class="form-check-input " id="exampleCheck1">
+                    <label class="form-check-label " for="exampleCheck1">Agree to our <a href="#"
+                        style="color: #138E3D">terms
+                        and conditions</a> </label>
+                  </div>
+
+                  <div class="my-4 text-center">
+                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                      data-target="#createWallet">Create</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
 
       <!-- History Booking -->
       <div class="col-12 mt-5 collapse" id="history">
@@ -580,22 +791,23 @@
     $(document).ready(function () {
       $("#currentBookingBtn").click(function () {
         $("#currentBooking").addClass("show");
-        $("#checklist").removeClass("show");
+        $("#rentWallet").removeClass("show");
         $("#history").removeClass("show");
-        $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#rentWalletBtn").addClass("secondary-text-color")
+        $("#rentWalletBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#historyBtn").addClass("secondary-text-color")
         $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").addClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").removeClass("secondary-text-color")
 
       });
-      $("#checklistBtn").click(function () {
-        $("#checklist").addClass("show");
+
+      $("#rentWalletBtn").click(function () {
+        $("#rentWallet").addClass("show");
         $("#currentBooking").removeClass("show");
         $("#history").removeClass("show");
-        $("#checklistBtn").addClass("primary-text-color sub-menu--dashboard-active")
-        $("#checklistBtn").removeClass("secondary-text-color")
+        $("#rentWalletBtn").addClass("primary-text-color sub-menu--dashboard-active")
+        $("#rentWalletBtn").removeClass("secondary-text-color")
         $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").addClass("secondary-text-color")
         $("#historyBtn").addClass("secondary-text-color")
@@ -605,10 +817,10 @@
       $("#historyBtn").click(function () {
         $("#history").addClass("show");
         $("#currentBooking").removeClass("show");
-        $("#checklist").removeClass("show");
+        $("#rentWallet").removeClass("show");
 
-        $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#rentWalletBtn").addClass("secondary-text-color")
+        $("#rentWalletBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#currentBookingBtn").addClass("secondary-text-color")
         $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
         $("#historyBtn").removeClass("secondary-text-color")
