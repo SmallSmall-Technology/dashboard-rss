@@ -72,6 +72,14 @@
   min-width: 211px;
 }
 
+.btn-custom-tertiary {
+  background: #ffffff;
+  border-radius: 4px;
+  color: #007dc1;
+  border: 1px solid #007dc1;
+  min-width: 211px;
+}
+
 .btn-custom-primary:hover {
   background: #007dc1;
   color: #eeeef3;
