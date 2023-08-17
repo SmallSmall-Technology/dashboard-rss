@@ -2,6 +2,35 @@
   font-family: "Poppins", sans-serif;
 }
 
+.new {
+  border-radius: 4px;
+  background: #007dc1;
+  color: #eeeef3;
+  padding: 5px;
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  min-width: 42px;
+  right: 5px;
+  animation-name: new;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes new {
+  from {
+    min-width: 42px;
+    font-size: 10px;
+  }
+  to {
+    min-width: 50px;
+    font-size: 15px;
+  }
+}
+
 /* START CUSTOM FONT SIZES */
 .custom-font-size-14 {
   font-size: 14px;
