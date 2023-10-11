@@ -365,7 +365,12 @@
 
       <!-- current booking -->
       <div class="col-12 mt-5 collapse show " id="currentBooking">
-        <div class="primary-background p-md-5 p-3">
+        <div class="primary-background p-md-5 p-3  position-relative">
+          <div class="col-md-3 col-12 custom-btn mb-2" style="position: absolute; top: 0.8em; right: 0em">
+            <button style="background-color: #E8091E; color: #ffffff"
+              class="d-md-block d-none btn font-weight-light  p-3  w-100" type="button">Cancel
+              subscription</button>
+          </div>
           <div class="row">
             <div class="col-12">
               <h3 class="address-title">2 bed, Trinity Apartments</h3>
@@ -394,18 +399,23 @@
           </div>
           <div class="row">
             <div class="col-md-3 col-12 custom-btn mb-2">
-              <button class="btn font-weight-light  p-3 secondary-background w-100" type="button">Renew
-                Subscription</button>
+              <button class="btn font-weight-light  p-3 secondary-background w-100" type="button">Pay with
+                Wallet</button>
             </div>
             <div class="col-md-3 col-12 custom-btn mb-2">
-              <button class="btn font-weight-light  p-3 secondary-background w-100" type="button">Cancel
-                Subscription</button>
+              <button class="btn font-weight-light  p-3 secondary-background w-100" type="button">Pay with
+                Paystack</button>
             </div>
             <div class="col-md-4 col-12 custom-btn mb-2">
               <button class="btn font-weight-light  p-3 secondary-background w-100" type="button">Subscribe to
                 wallet
                 direct
                 debit</button>
+            </div>
+            <div class="col-md-4 col-12 custom-btn mb-2">
+              <button style="background-color: #E8091E; color: #ffffff"
+                class="d-md-none d-block btn font-weight-light  p-3  w-100" type="button">Cancel
+                subscription</button>
             </div>
           </div>
         </div>
