@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+
+
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom-css/header.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/maintenance.css" />
+
+
+  <title>Dashboard Home</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- desktop menu bar -->
+    <nav class="navbar navbar-expand-lg nav-bottom-color navbar-light primary-background px-4 py-0 d-lg-flex d-none">
+      <a class="navbar-brand">
+        <img class="img-fluid" src="assets/images/rss-logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active mr-5">
+            <a class="nav-link" href="#">
+              <div class="d-flex user-container">
+                <div class="user-shorthand d-flex justify-content-center align-items-center mr-2">
+                  <p class="m-0">JD</p>
+                  <div class="active-user"></div>
+                </div>
+                <div class="user-name">
+                  <p>John Doe</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center dashboard-active mr-4">
+            <div class="menu-text">
+              <a href="index.html" class=" text-dark" style="text-decoration: none;">Dashboard</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="notification.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2 position-relative">
+                <div class="notification-circle d-md-flex d-none justify-content-center align-items-center">2</div>
+                <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="" />
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="inbox.html" class=" text-dark" style="text-decoration: none;">Notification</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/calendar-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="booking.html" class=" text-dark" style="text-decoration: none;">Booking</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="wallet.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/wallet-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="wallet.html" class=" text-dark" style="text-decoration: none;">Wallet</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/profile-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="profile.html" class=" text-dark" style="text-decoration: none;">Profile</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/nativeSquare-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="#" class=" text-dark" style="text-decoration: none;">Native Square</a>
+            </div>
+          </li>
+        </ul>
+        <a href="#">
+          <span class="navbar-text text-dark mr-5">
+            Log out
+            <img class="img-fluid" src="assets/images/logout.svg" alt="">
+          </span>
+        </a>
+
+
+      </div> -->
+    </nav>
+
+    <!-- mobile menu bar -->
+    <nav class="navbar d-flex menu-navbar-bg nav-mobile d-flex d-lg-none">
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <img class="img-fluid" src="./assets/images/menu-burger.svg" alt="">
+      </button>
+      <a href="#" style="width: 33%" class="flex-grow-1 text-center">
+        <img class="img-fluid" src="assets/images/rss-logo.svg" alt="logo">
+      </a>
+
+
+    </nav>
+
+  </header>
+
+
+
+  <main class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="error-template">
+          <h1>
+            😔 Oops!</h1>
+          <h2>
+            Temporarily down for maintenance</h2>
+          <h1>
+            We'll be back soon!</h1>
+          <div>
+            <p>
+              Sorry for the inconvenience but we're performing some maintenance at the moment.
+              we'll be back online shortly!</p>
+            <p>
+              — RSS Team</p>
+          </div>
+          <div class="error-actions">
+            <a href="index.html" style="margin-top: 10px;" class="btn secondary-background btn-lg"><span
+                class="glyphicon glyphicon-home">
+              </span>Take Me Home </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <svg class="svg-box" width="380px" height="500px" viewbox="0 0 837 1045" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z"
+              id="Polygon-1" stroke="#3bafda" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z"
+              id="Polygon-2" stroke="#7266ba" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z"
+              id="Polygon-3" stroke="#f76397" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z"
+              id="Polygon-4" stroke="#00b19d" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z"
+              id="Polygon-5" stroke="#ffaa00" stroke-width="6" sketch:type="MSShapeGroup"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+        <div>
+          <a class="mr-3" href="#">Rentsmallsmall FAQ</a>
+          <a class="mr-3" href="#">Buysmallsmall FAQ</a>
+          <a class="mr-3" href="#">About Us</a>
+          <a class="" href="#">Blog</a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Jquery js -->
+  <script src="./assets/js/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap js and Popper js -->
+  <script src="./assets/js/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap-js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
